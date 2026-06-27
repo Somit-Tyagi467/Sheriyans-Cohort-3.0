@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="search-icon" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/>
+        </symbol>
+        <symbol id="location-icon" viewBox="0 0 192 192" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path stroke="currentColor" stroke-width="12" d="M96 22a51.88 51.88 0 0 0-36.77 15.303A52.368 52.368 0 0 0 44 74.246c0 16.596 4.296 28.669 20.811 48.898a163.733 163.733 0 0 1 20.053 28.38C90.852 163.721 90.146 172 96 172c5.854 0 5.148-8.279 11.136-20.476a163.723 163.723 0 0 1 20.053-28.38C143.704 102.915 148 90.841 148 74.246a52.37 52.37 0 0 0-15.23-36.943A51.88 51.88 0 0 0 96 22Z"></path>
+                <circle cx="96" cy="74" r="20" stroke="currentColor" stroke-width="12"></circle>
+            </g>
+        </symbol>
+
+        <symbol id="sex-icon" viewBox="0 0 48 48">
+            <path fill="currentColor" fill-rule="evenodd" d="M42.406 2.976A2.423 2.423 0 0 0 39.91.481a67 67 0 0 0-6.371.507c-.833.106-1.523.61-1.819 1.35c-.3.75-.137 1.598.436 2.242c.325.367.725.802 1.216 1.317l-4.254 4.254a14.68 14.68 0 0 0-8.784-2.902c-8.142 0-14.742 6.6-14.742 14.741c0 7.36 5.393 13.459 12.442 14.563v2.46h-1.606a2.3 2.3 0 0 0 0 4.601h1.606v1.605a2.3 2.3 0 0 0 4.601 0v-1.605h1.606a2.301 2.301 0 0 0 0-4.602h-1.606v-2.46c7.049-1.104 12.44-7.203 12.44-14.562c0-3.003-.898-5.796-2.44-8.125L37.001 9.5c.511.48.946.874 1.313 1.197c.66.58 1.524.731 2.278.416c.741-.31 1.241-1.015 1.338-1.859c.2-1.74.408-3.964.476-6.279M20.335 11.34c-5.883 0-10.651 4.769-10.651 10.651s4.768 10.65 10.65 10.65s10.651-4.768 10.651-10.65s-4.768-10.65-10.65-10.65" clip-rule="evenodd"/>
+        </symbol>
+
+        <symbol id="size-icon" viewBox="0 0 20 20">
+            <path fill="currentColor" fill-rule="evenodd" d="M2.31 13.626a.5.5 0 0 0 0 .708l3.536 3.535a.5.5 0 0 0 .707 0L17.867 6.555a.5.5 0 0 0 0-.707l-3.536-3.535a.5.5 0 0 0-.707 0l-1.06 1.06l1.709 1.71a.5.5 0 1 1-.708.706L11.857 4.08l-1.415 1.415l.884.884a.5.5 0 0 1-.707.707l-.884-.884l-1.414 1.414l1.709 1.709a.5.5 0 1 1-.707.707L7.614 8.323L6.2 9.737l.884.884a.5.5 0 1 1-.707.707l-.884-.884l-1.415 1.415l1.71 1.709a.5.5 0 1 1-.708.707l-1.709-1.71zm-.706 1.415a1.5 1.5 0 0 1 0-2.122L12.917 1.606a1.5 1.5 0 0 1 2.122 0l3.535 3.535a1.5 1.5 0 0 1 0 2.121L7.26 18.576a1.5 1.5 0 0 1-2.12 0z" clip-rule="evenodd"/>
+        </symbol>
+
+    </svg>
+
+
+    <nav id="navbar">
+        <div>
+            <div id="logo">
+                <h2>INSECT</h2>
+            </div>
+            <div id="search">
+                <span>
+                    <svg class="icon">
+                        <use href="#search-icon"></use>
+                    </svg>
+                </span> 
+                Search...
+            </div>
+        </div>
+        <div id="nav">
+            <div class="link"><a href="#">Home</a></div>
+            <div class="link"><a href="#">Shop</a></div>
+            <div class="link"><a href="#">About</a></div>
+            <div class="link"><a href="#">Gallery</a></div>
+            <div class="link"><a href="#">Contact</a></div>
+        </div>
+    </nav>
+    <div id="jar-insect-container">
+        <img src="beetle_jar2.png" alt="Jar-encased Insect" width="70%" class="jar-image">
+    </div>
+    <div id="main_body">
+        <section id="left_section">
+            <h1 id="vertical-text">Classification</h1>
+            <div class="list">
+                <ul>
+                    <li class="title">
+                        <span>Class:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Insecta</span>
+                    </li>
+                    <hr class="line">
+                    <li class="title">
+                        <span>Order:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Coleoptera</span>
+                    </li>
+                    <hr class="line">
+                    <li class="title">
+                        <span>Family:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Cerambycidae</span>
+                    </li>
+                    <hr class="line">
+                    <li class="title">
+                        <span>Sub-Family:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Cerambycinae</span>
+                    </li>
+                    <hr class="line">
+                    <li class="title">
+                        <span>Tribe:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Callicromatini</span>
+                    </li>
+                    <hr class="line">
+                    <li class="title">
+                        <span>Genus:</span>
+                    </li>
+                    <li class="subtitle">
+                        <span>Pachyteria</span>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section id="right_section">
+            <div id="right-details">
+                <div id="name">
+                    <h1>Pachyteria</h1>
+                    <h1>equestris</h1>
+                </div>
+                <div id="stat">
+                    <div class="stat-item">
+                        <span><img src="beetle.png" height="70px" alt="beetle small img"></span>
+                        <br>
+                        <span>32mm</span>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="stat-item">
+                        <div class="prop">
+                            <span>
+                                <svg class="icon">
+                                    <use href="#location-icon"></use>
+                                </svg>
+                            </span> 
+                            <span>
+                                <p>Locality: </p> 
+                                <p> Malaysia</p>
+                            </span>
+                        </div>
+                        <br>
+                        <div class="prop">
+                            <span>
+                                <svg class="icon">
+                                    <use href="#sex-icon"></use>
+                                </svg>
+                            </span>
+                            <span>
+                                <p>Sex: </p>
+                                <p>Male </p>
+                            </span>
+                        </div>
+                        <br>
+                        <div class="prop">
+                            <span>
+                                <svg class="icon">
+                                    <use href="#size-icon"></use>
+                                </svg>
+                            </span>
+                            <span>
+                                <p>Size: </p>
+                                <p>32mm / 12mm</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="options">
+                    <h1 id="cost">$5.99</h1>
+                    <div id="buttons-cluster">
+                        <div class="button">
+                            <label for="anteena" class="switch">
+                                <input type="checkbox" name="anteena" id="anteena">
+                                <span class="slider"></span>
+                            </label>
+                            <p>
+                                View Detailed Antennae
+                            </p>
+                        </div>
+                        <div class="button">
+                            <label for="underside" class="switch">
+                                <input type="checkbox" name="underside" id="underside">
+                                <span class="slider"></span>
+                            </label>
+                            <p>
+                                View Underside
+                            </p>
+                        </div>
+                    </div>
+                    <div id="add_to_cart">
+                        <p>Add to Collection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

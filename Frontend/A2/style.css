@@ -1,0 +1,259 @@
+#main_body{
+    display: flex;
+    z-index: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#left_section{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(230, 225, 222);
+}
+
+#right_section{
+    width: 50%;
+    height: 100vh;
+    background-color: #BA3B2F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    margin: 25px 0; 
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+#navbar > div{
+    width: 50%;
+}
+#navbar > :first-child{
+    display: flex;
+    align-items: center;
+}
+#search{
+    background-color: lightgray;
+    width: 40%;
+    padding: 10px;
+    border-radius: 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: rgb(110, 110, 110);
+}
+#search > span > .icon{
+    color: rgb(110, 110, 110);
+    width: 20px;
+    height: 20px;
+}
+#logo{
+    width: 25%;
+    margin-left: 8%;
+    font-size:18px;
+}
+#nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.list{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 20px;
+}
+.line {
+    margin: 10px 0;
+    color:lightgray;
+}
+.title ,.subtitle{
+    padding-bottom: 5px;
+}
+.title{
+    font-weight:bold;
+    font-size: 25px;
+    color: #BA3B2F;
+}
+.subtitle{
+    color:rgb(230, 225, 222);
+}
+
+ul{
+    width: 30%;
+}
+.title > span{
+    font-size:16px;
+    color:black;
+}
+.subtitle > span{
+    font-size:16px;
+    color:#333;
+}
+#vertical-text{
+    font-family:serif;
+    font-style:italic;
+    font-size:55px;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    letter-spacing: 1px;
+    color: black;
+    align-items: center;
+    z-index: 3;
+}
+#right-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-left: 70px;
+    height: 100%;
+    color:rgb(230, 225, 222);
+    width:max-content;
+    z-index: 2;
+}
+#stat{
+    margin: 30px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    height:min-content;
+    gap: 25px;
+}
+.stat-item{
+    display: flex;
+    flex-direction: column;
+}
+
+#stat > hr{
+    /* margin: 0px 30px; */
+    height:70%;
+    margin-top: 12px;
+}
+#stat > :first-child{
+    align-items: center;
+    margin-top: 12px;
+}
+
+.prop{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.prop > span:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#name > h1{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:400;
+
+}
+#buttons-cluster{
+    display: flex;
+    flex-direction: column;
+    height:min-content;
+    gap: 16px;
+    margin: 30px 0px;
+}
+.button{
+    display: flex;
+    gap: 16px;
+}
+.switch{
+    position:relative;
+    display:inline-block;
+    width:35px;
+    height:20px;
+}
+.switch input{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(211, 211, 211, 0.538);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/*The white circle inside the slider*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #ff4d4d; /*color changes to red when the input is checked */
+}
+
+input:checked + .slider:before {
+  transform: translateX(15px); /*this makes the circle move to the right side of the slider(28+22=50px)*/
+}
+#options{
+    width: max-content
+}
+#cost{
+    color: #DBBD93;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+
+}
+#add_to_cart {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #DBBD93;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#add_to_cart > p{
+    color: black;
+    text-align: center;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    color: #DBBD93; 
+}
+#jar-insect-container{
+    position: fixed;
+    padding-top: 65px;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.jar-image{
+    z-index: 1;
+    pointer-events: none;
+}
